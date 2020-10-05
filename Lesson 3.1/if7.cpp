@@ -6,14 +6,17 @@ int main()
 {
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
-    int x;
-    scanf ("%d", &x);
+    int a, b, out;
+    scanf("%d %d", &a, &b);
 
-    int  e = x % 10;
-    int  d = x / 10 % 10;
-
-
-    printf("Îäèíèö³- %d\nÄåñÿòêè- %d\n", e, d);
-
+    if (a>b)
+    {
+       out=2;
+    }
+    else
+    {
+       out=1;
+    }
+    printf("%d\n", out);
     return 0;
 }

@@ -6,12 +6,17 @@ int main()
 {
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
-    int x;
-    scanf ("%d", &x);
+    int x, y;
+    scanf("%d %d", &x, &y);
 
-    int  dig_1 = x / 100;
-
-    printf("%d", dig_1);
+    if ((x+y)%2!=0)
+    {
+       printf ("Yes");
+    }
+    else
+    {
+        printf ("No");
+    }
 
     return 0;
 }
