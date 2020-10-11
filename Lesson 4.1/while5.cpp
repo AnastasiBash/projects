@@ -4,19 +4,17 @@ using namespace std;
 
 int main()
 {
+    int N;
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
-    int a, b, out;
-    scanf("%d %d", &a, &b);
+    scanf ("%d/n", &N);
+    int k = 0;
+    while (N >= 2)
+    {
+        k++;
+        N /= 2;
+    }
+printf("%d\n", k);
 
-    if (a>b)
-    {
-       out=2;
-    }
-    else
-    {
-       out=1;
-    }
-    printf("%d\n", out);
     return 0;
 }
